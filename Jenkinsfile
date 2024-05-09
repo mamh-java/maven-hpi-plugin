@@ -40,7 +40,7 @@ def runTests(Map params = [:]) {
 }
 
 parallel(
-    'windows-11': runTests(platform: 'windows', jdk: 11),
+    'windows-17': runTests(platform: 'windows', jdk: 17),
     'linux-17': runTests(platform: 'linux', jdk: 17),
     'linux-21': runTests(platform: 'linux', jdk: 21)
 )
